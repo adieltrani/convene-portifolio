@@ -1,20 +1,24 @@
-nav {
-  background-color: #1F1F38;
-  color: #FFFFFF;
-  padding: 10px;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-nav ul li a {
-  color: #FFFFFF;
-  text-decoration: none;
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-nav ul li a:hover {
-  color: #00FFFF;
+button:hover {
+  color: darkblue;
 }

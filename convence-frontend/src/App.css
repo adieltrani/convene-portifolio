@@ -1,20 +1,38 @@
-nav {
-  background-color: #1F1F38;
-  color: #FFFFFF;
-  padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  font-family: "REM", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
+.navbar{
+ padding: 25px 10px;
+ width: 100%;
+ background-color: #eb5b4e;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ position: sticky; /* Torna fixa no topo */
+ top: 0;
+ z-index: 10;
 }
 
-nav ul li a {
-  color: #FFFFFF;
-  text-decoration: none;
+
+.menu{
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+
 }
 
-nav ul li a:hover {
-  color: #00FFFF;
+.menu a{ 
+ color: white;
+ text-decoration: none;
+ padding: 3px 8px;
 }
+
+.menu h3{
+ color: white;
+}
+

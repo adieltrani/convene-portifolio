@@ -51,23 +51,6 @@ O projeto estará disponível em **[http://localhost:3000](http://localhost:3000
 
 ---
 
-## 📂 Estrutura do Projeto
-
-```
-/convence
-├── public/
-├── src/
-│   ├── components/
-│   │   └── Navbar.js
-│   ├── pages/
-│   │   ├── Home.js
-│   │   └── Eventos.js
-│   └── App.js
-└── README.md
-```
-
----
-
 ## 🤝 Contribuindo
 
 Contribuições são sempre bem-vindas! Fique à vontade para abrir **issues** ou enviar **pull requests**.
@@ -80,4 +63,4 @@ Este projeto é licenciado sob a licença MIT - veja o arquivo **LICENSE** para 
 
 ---
 
-**Feito com ❤️ por [Seu Nome](https://github.com/SeuUsuario)**
+**Feito com ❤️ por [Adiexx](https://github.com/adiexxoff)**

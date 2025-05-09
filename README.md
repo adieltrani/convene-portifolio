@@ -1,4 +1,4 @@
-Convence# Convence - Sistema de Gestão de Eventos 📅✨
+# Convence - Sistema de Gestão de Eventos 📅✨
 
 O **Convence** é uma plataforma moderna para criação e gestão de eventos, permitindo que organizadores criem experiências únicas e participantes encontrem os melhores eventos para suas necessidades. O sistema inclui desde a divulgação dos eventos até a gestão de feedbacks pós-evento.
 

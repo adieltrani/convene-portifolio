@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   font-family: "REM", sans-serif;
   box-sizing: border-box;
@@ -36,3 +37,44 @@
  color: white;
 }
 
+.centro {
+  border-radius: 30px;
+  box-shadow: 10px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  width: 300px;
+  padding: 20px 40px;
+  border: 2px solid #eb5b4e82; 
+   box-shadow: 10px 10px #c02e014d;
+}
+
+.centro h2 {
+  margin-bottom: 15px; /* Adiciona um espaço abaixo do título */
+}
+
+.centro label {
+  margin-bottom: 5px; /* Adiciona um pequeno espaço abaixo do label */
+  width: 100%; /* Garante que o label ocupe a largura do container para alinhamento */
+  text-align: left; /* Alinha o texto do label à esquerda */
+}
+
+.centro input{
+  width: 100%; /* Faz o input ocupar a largura do container */
+  padding: 10px;
+  margin-bottom: 10px; /* Adiciona espaço abaixo do input */
+  border: 1px solid #eb5b4e82;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+}
+.centro button{
+  padding: 10px;
+}
+
+.main {
+  display: flex; /* Ativa o Flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 50vh; /* Garante que ocupe pelo menos a altura total da tela */
+   /* Cor de fundo opcional para o main */
+}

@@ -26,6 +26,7 @@ const connectDB = async () => {
 connectDB();
 
 app.post("/login", async (req, res) => {
+   
  try {
     const novoLogin = await ingol.create(req.body)
     res.json(novoLogin)

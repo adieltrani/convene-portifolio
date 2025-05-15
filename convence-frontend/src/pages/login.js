@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+
 
 function Login() {
     const [senha, setsenha] = useState('');
@@ -44,12 +45,6 @@ function Login() {
     }
 };
 
-    const handleRegister = (event) => {
-        event.preventDefault();
-        console.log('Implementar lógica de registro...');
-        // Aqui você implementaria a lógica para enviar os dados de registro
-        // para uma rota de registro na sua API (ex: /register com método POST)
-    };
 
     return (
         <div className='main'>
@@ -70,8 +65,7 @@ function Login() {
                     onChange={handleSenhaChange}
                 />
                 <div>
-                    <button type="button" onClick={handleLogin}>Entrar</button> {/* Alterado para button */}
-                    <button type="button" onClick={handleRegister}>Registrar</button> {/* Alterado para button */}
+                    <button type="button" onClick={handleLogin}>Entrar</button>
                 </div>
             </div>
         </div>

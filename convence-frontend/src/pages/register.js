@@ -99,8 +99,8 @@ function Register() {
                     onChange={handleConfirmSenhaChange}
                 />
                 <div>
-                    <button type="button" onClick={handleLogin}>Registrar</button>
                     <button type="button" onClick={handleRedirectLogin}>Entrar</button>
+                    <button type="button" onClick={handleLogin}>Registrar</button>
                 </div>
             </div>
         </div>

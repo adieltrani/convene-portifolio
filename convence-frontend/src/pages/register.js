@@ -60,7 +60,8 @@ function Register() {
 
         data = await response.json();
         alert(data.mensagem)
-        if(data.mensagem === "Deu certo!"){
+        
+        if(response.ok){
             handleRedirect();
         }
         else{

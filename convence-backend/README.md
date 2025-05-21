@@ -17,5 +17,5 @@ cd convence-backend
 npm i express dotenv mongoose cors
 
 # Inicie o servidor
-npm start
+node --watch server.js
 ```

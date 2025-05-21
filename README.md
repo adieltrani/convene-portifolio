@@ -20,9 +20,7 @@ O **Convence** é uma plataforma moderna para criação e gestão de eventos, pe
 
 * **Frontend:** React, HTML, CSS, JavaScript
 * **Backend:** Node.js, Express
-* **Banco de Dados:** MongoDB (ou outro que você preferir)
-* **Outras:** React Router, Tailwind CSS (para estilização)
-
+* **Banco de Dados:** MongoDB
 ---
 
 ## 🚀 Como Rodar o Projeto
@@ -35,10 +33,10 @@ O **Convence** é uma plataforma moderna para criação e gestão de eventos, pe
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SeuUsuario/convence.git
+git clone https://github.com/adiexxoff/convene-portifolio
 
 # Entre na pasta do projeto
-cd convence
+cd convence-frontend
 
 # Instale as dependências
 npm install
@@ -47,7 +45,6 @@ npm install
 npm start
 ```
 
-O projeto estará disponível em **[http://localhost:3000](http://localhost:3000)**.
 
 ---
 

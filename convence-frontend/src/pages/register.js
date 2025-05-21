@@ -6,6 +6,7 @@ function Register() {
     const [confirmsenha, setconfirmsenha] = useState('');
     const [email, setEmail] = useState('');
 
+    // Funções para atualizar os estados quando o valor dos inputs muda
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
     };
@@ -61,7 +62,7 @@ function Register() {
         console.log('Erro de conexão com o servidor:', error);
     }
     };
-    
+
     const navigate = useNavigate();
     const handleRedirect = () =>{
         

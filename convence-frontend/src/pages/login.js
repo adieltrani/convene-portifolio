@@ -23,6 +23,10 @@ function Login() {
         if (email === '' || senha === '') {
             alert('Por favor, preencha todos os campos.');
             return;
+        } 
+        if(!email.includes('@') || !email.includes('.')){
+            alert('Email Inválido!');
+            return;           
         } else {
             response = await fetch('http://localhost:3000/login', {
                 method: 'POST',

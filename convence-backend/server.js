@@ -28,8 +28,20 @@ connectDB();
 app.post("/login", async (req, res) => {
    
  try {
-    const novoLogin = await ingol.create(req.body)
+   //  const novoLogin = await ingol.create(req.body)
+   //  res.json(novoLogin)
+   const {email, senha} = req.body;
+   const usuarioexist = await ingol.findOne({email: email});
+
+   if (usuarioexist){
+      console.log('Ja existe uma conta com esse email!')
+      return res.status(409).json({error: "Ja existe uma conta com esse email!"})
+   }
+   else{
+      const novoLogin = await ingol.create(req.body)
     res.json(novoLogin)
+   }
+
  } catch (error) {
     console.error("Erro ao criar login:", error);
     res.status(500).json({ error: error.message });

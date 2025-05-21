@@ -33,7 +33,7 @@ O **Convence** é uma plataforma moderna para criação e gestão de eventos, pe
 
 ```bash
 # Clone o repositório
-git clone https://github.com/adiexxoff/convene-portifolio
+git clone https://github.com/adieltrani/convene-portifolio
 
 # Entre na pasta do projeto
 cd convence-frontend

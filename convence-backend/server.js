@@ -28,10 +28,8 @@ connectDB();
 app.post("/login", async (req, res) => {
    
  try {
-   //  const novoLogin = await ingol.create(req.body)
-   //  res.json(novoLogin)
-   const {email, senha} = req.body;
-   const usuarioexist = await ingol.findOne({email: email});
+   const {email} = req.body; //pega o email na pagina longin via req.body
+   const usuarioexist = await ingol.findOne({email: email}); //procura no db um dado tipo email definido na tabela q tenha o email(dado)
 
    if (usuarioexist){
       console.log('Ja existe uma conta com esse email!')

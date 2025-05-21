@@ -38,7 +38,7 @@ app.post("/register", async (req, res) => {
    }
    else{
       const novoLogin = await ingol.create(req.body)
-      res.json({mensagem: "Deu certo!"})
+      res.status(200).json({mensagem: "Deu certo!"})
       //Aqui cria um novo usuario caso nao existir
    }
 

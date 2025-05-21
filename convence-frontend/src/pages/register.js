@@ -18,17 +18,6 @@ function Register() {
         setconfirmsenha(event.target.value);
     };
 
-    const navigate = useNavigate();
-    const handleRedirect = () =>{
-        
-        navigate('/login');
-    };
-
-    const handleRedirectLogin = () =>{
-        
-        navigate('/login');
-    };
-
     const handleLogin = async (event) => {
     event.preventDefault();
 
@@ -60,7 +49,7 @@ function Register() {
 
         data = await response.json();
         alert(data.mensagem)
-        
+
         if(response.ok){
             handleRedirect();
         }
@@ -71,7 +60,13 @@ function Register() {
     } catch (error) {
         console.log('Erro de conexão com o servidor:', error);
     }
-};
+    };
+    
+    const navigate = useNavigate();
+    const handleRedirect = () =>{
+        
+        navigate('/login');
+    };
 
 
     return (
@@ -100,7 +95,7 @@ function Register() {
                     onChange={handleConfirmSenhaChange}
                 />
                 <div>
-                    <button type="button" onClick={handleRedirectLogin}>Entrar</button>
+                    <button type="button" onClick={handleRedirect}>Entrar</button>
                     <button type="button" onClick={handleLogin}>Registrar</button>
                 </div>
             </div>

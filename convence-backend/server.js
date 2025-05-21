@@ -25,7 +25,7 @@ const connectDB = async () => {
 }
 connectDB();
 
-app.post("/login", async (req, res) => {
+app.post("/register", async (req, res) => {
    
  try {
    const {email} = req.body; //pega o email na pagina longin via req.body
@@ -33,11 +33,11 @@ app.post("/login", async (req, res) => {
 
    if (usuarioexist){
       console.log('Ja existe uma conta com esse email!')
-      return res.status(409).json({error: "Ja existe uma conta com esse email!"})
+      return res.status(409).json({mensagem: "Ja existe uma conta com esse email!"})
    }
    else{
       const novoLogin = await ingol.create(req.body)
-    res.json(novoLogin)
+      res.json({mensagem: "Deu certo!"})
    }
 
  } catch (error) {

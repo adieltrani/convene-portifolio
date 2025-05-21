@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Eventos from './pages/eventos'; 
 import Ingresos from './pages/ingresos'; 
 import Login from './pages/login'; 
+import Register from './pages/register';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
          <Route path="/eventos" element={<Eventos />} />
          <Route path="/ingresos" element={<Ingresos />} />
          <Route path="/login" element={<Login />} />
+         <Route path="/register" element={<Register/>}/>
       </Routes>
       </div>
   );

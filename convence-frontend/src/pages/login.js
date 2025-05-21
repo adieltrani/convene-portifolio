@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Navigate, useNavigate} from 'react-router-dom';
 
 
 function Login() {
@@ -15,39 +16,46 @@ function Login() {
 
     const handleLogin = async (event) => {
     event.preventDefault();
+    };
 
-    let response;
-    let data;
+    const navigate = useNavigate();
+    const handleRedirect = () =>{
+        
+        navigate('/register');
+    };
 
-    try {
-        if (email === '' || senha === '') {
-            alert('Por favor, preencha todos os campos.');
-            return;
-        } 
-        if(!email.includes('@') || !email.includes('.')){
-            alert('Email Inválido!');
-            return;           
-        } else {
-            response = await fetch('http://localhost:3000/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, senha }),
-            });
+//     let response;
+//     let data;
 
-            data = await response.json();
+//     try {
+//         if (email === '' || senha === '') {
+//             alert('Por favor, preencha todos os campos.');
+//             return;
+//         } 
+//         if(!email.includes('@') || !email.includes('.')){
+//             alert('Email Inválido!');
+//             return;           
+//         } else {
+//             response = await fetch('http://localhost:3000/register', {
+//                 method: 'POST',
+//                 headers: {
+//                     'Content-Type': 'application/json',
+//                 },
+//                 body: JSON.stringify({ email, senha }),
+//             });
 
-            if (response.ok) {
-                console.log('Login realizado com sucesso!', data);
-            } else {
-                console.error('Erro ao fazer login:', data);
-            }
-        }
-    } catch (error) {
-        console.error('Erro de conexão com o servidor:', error);
-    }
-};
+//             data = await response.json();
+
+//             if (response.ok) {
+//                 console.log('Login realizado com sucesso!', data);
+//             } else {
+//                 console.error('Erro ao fazer login:', data);
+//             }
+//         }
+//     } catch (error) {
+//         console.error('Erro de conexão com o servidor:', error);
+//     }
+// };
 
 
     return (
@@ -70,6 +78,7 @@ function Login() {
                 />
                 <div>
                     <button type="button" onClick={handleLogin}>Entrar</button>
+                    <button type="button" onClick={handleRedirect}>Registrar</button>
                 </div>
             </div>
         </div>

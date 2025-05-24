@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import ingol from './apis/ingol.js';
+import ingol from './ingol.js';
 import cors from 'cors';
 
 const app = express(); //Cria Uma Instancia do app em express

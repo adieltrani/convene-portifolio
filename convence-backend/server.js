@@ -24,7 +24,9 @@ const connectDB = async () => {
 } //Funcao que cria uma conexao com o DB
 
 connectDB(); //Inicia a funcao que inicia a conexao com o DB
-
+app.get("/", (req, res) => {
+   res.send("Servidor Online!")
+})
 app.post("/register", async (req, res) => {
    
  try {

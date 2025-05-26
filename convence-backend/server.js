@@ -15,6 +15,7 @@ const connectDB = async () => {
   try{
      await mongoose.connect(process.env.MONGO_URI);
      console.log('Banco de Dados Conectado!');
+     return
 
   }catch(error){
     console.log('Erro ao se conectar ao Bando de Dados!', error)

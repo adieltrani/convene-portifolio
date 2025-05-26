@@ -39,7 +39,7 @@ function Register() {
             alert('As senhas não conferem');
             return;
         }  else {
-            response = await fetch('http://localhost:3000/register', {
+            response = await fetch('https://convene-portifolio.vercel.app/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

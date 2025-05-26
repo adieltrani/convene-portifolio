@@ -13,7 +13,10 @@ app.use(express.json()); //Permite o middleware para persear requisicoes JSON
 
 const connectDB = async () => {
   try{
-     await mongoose.connect(process.env.MONGO_URI);
+     await mongoose.connect(process.env.MONGO_URI, {
+     connectTimeoutMS: 60000, // Aumentado para 60 segundos
+     socketTimeoutMS: 60000   // Também pode ser útil
+     });
      console.log('Banco de Dados Conectado!');
 
   }catch(error){

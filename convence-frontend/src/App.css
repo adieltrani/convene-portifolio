@@ -9,13 +9,17 @@
 }
 
 .navbar{
- padding: 25px 10px;
+ padding: 15px 10px;
  width: 100%;
  background-color: #eb5b4e;
  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
  position: sticky; /* Torna fixa no topo */
  top: 0;
  z-index: 10;
+ flex-direction: row;
+ display: flex;
+ border-bottom-left-radius: 25px;
+ border-bottom-right-radius: 25px;
 }
 
 
@@ -34,7 +38,9 @@
 }
 
 .menu h3{
+  font-size: 25px;
  color: white;
+ align-content: center;
 }
 
 link{
@@ -80,4 +86,38 @@ link{
   align-items: center; /* Centraliza verticalmente */
   min-height: 50vh; /* Garante que ocupe pelo menos a altura total da tela */
    /* Cor de fundo opcional para o main */
+}
+
+.logo-nav{
+  margin: 0px 12px;
+  margin-top: 5px;
+  display: flex;
+  width: 50px;
+  height: 42px;
+}
+
+.item-menu{
+  font-size: 20px;
+  align-content: center;
+}
+
+/* Estilos básicos para os links da navbar */
+.nav-link {
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #d64929;
+}
+
+/* ESTILOS PARA QUANDO O LINK ESTÁ ATIVO (SELECIONADO) */
+
+.nav-link.active {
+  background-color: #de6952; /* Uma cor de fundo mais escura, por exemplo */
+  color: yellow; /* Uma cor de texto diferente */
+  /* Outros estilos: */
+  /* border-bottom: 2px solid yellow; */
+  /* font-weight: bolder; */
 }

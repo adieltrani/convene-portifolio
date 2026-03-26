@@ -52,10 +52,10 @@ link{
   display: flex; 
   flex-direction: column;
   align-items: center; 
-  width: 300px;
+  width: 400px;
   padding: 20px 40px;
   border: 2px solid #eb5b4e82; 
-   box-shadow: 10px 10px #c02e014d;
+  box-shadow: 10px 10px #c02e014d;
 }
 
 .centro h2 {
@@ -86,6 +86,10 @@ link{
   align-items: center; /* Centraliza verticalmente */
   min-height: 50vh; /* Garante que ocupe pelo menos a altura total da tela */
    /* Cor de fundo opcional para o main */
+}
+
+.centro li{
+  margin: 10px;
 }
 
 .logo-nav{

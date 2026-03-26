@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import ingol from './ingol.js';
+import eventos from './eventos.js';
 import cors from 'cors';
 
 const app = express(); //Cria Uma Instancia do app em express
@@ -51,6 +52,17 @@ app.post("/register", async (req, res) => {
     console.error("Erro ao criar login:", error);
     res.status(500).json({ error: error.message });
  }}); 
+
+ app.get("/consult", async (req, res) => {
+   
+   try {
+     const consulta = await eventos.find({});
+        console.log('Consultando DB!')
+        res.json(consulta);
+  
+   } catch (error) {
+      console.error("Erro ao criar login:", error);
+   }}); 
 
 // app.get("/login", async (req, res) => {
 //  try {
